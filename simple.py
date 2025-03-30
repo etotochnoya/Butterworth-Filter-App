@@ -2,6 +2,7 @@ from scipy.signal import butter, lfilter, freqz
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 # Функция создания фильтра
 def butter_lpf(fc, fs, n, order=4):
     nyquist = 0.5 * fs
@@ -32,7 +33,7 @@ plt.figure(figsize=(12, 8))
 # Исходный и фильтрованный сигнал (пример 1)
 plt.subplot(2, 1, 1)
 plt.plot(t, x_clean, label='Исходный (200 Гц + 1500 Гц)')
-plt.plot(t, x_filtered, label=f'После ФНЧ (fc={fc} Гц)', linewidth=2)
+plt.plot(t, x_filtered, label=f'После ФНЧ (fc={fc} Гц)', linewidth=2) #Tralalero tralala. Porcrodilo porcrala
 plt.xlabel('Время (с)')
 plt.ylabel('Амплитуда')
 plt.legend()
